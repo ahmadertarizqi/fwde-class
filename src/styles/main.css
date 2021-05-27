@@ -33,15 +33,20 @@
 }
 
 .navbar__menu-body .nav-link > a {
-   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 44px;
+   min-height: 44px;
    padding: .5rem 1rem;
    text-decoration: none;
    color: #000000e6;
-   font-weight: 400;
+   font-weight: 500;
 }
 
 .navbar__brand .logo-link {
    display: block;
+   width: 75px;
 }
 
 .navbar--toggler {
@@ -81,9 +86,9 @@
    }
 
    .navbar--toggler {
-      background-color: transparent;
-      width: 38px;
-      height: 38px;
+      background-color: #fff;
+      width: 40px;
+      height: 40px;
       cursor: pointer;
       line-height: 1;
       display: block;
@@ -111,11 +116,47 @@
    }
 
    .navbar__menu-head {
+      display: flex;
+      align-items: center;
+      position: relative;
       flex: none;
-      display: block;
-      height: 60px;
+      /* height: 100%; */
+      min-height: 60px;
       background-color: #fff;
       box-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.1);
+      padding: 15px 10px;
+   }
+
+   .navbar__menu-head .brand-logo {
+      width: 60px;
+      margin-right: 8px;
+   }
+
+   .navbar__menu-head .brand-title {
+      font-size: 1.25rem;
+      flex-grow: 1;
+      line-height: 1.15;
+      color: #000000e6;
+      font-weight: 500;
+   }
+
+   .navbar__menu-head .navbar--close {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      line-height: 1;
+      border: 1px solid #ccc;
+      color: #0000005e;
+      background-color: #ffff;
+      border-radius: 5px;
+      cursor: pointer;
+   }
+
+   .navbar__menu-head .navbar--close:focus {
+      box-shadow: 0 0 0 2px #867ae96e;
    }
 
    .navbar__menu-body {
@@ -136,28 +177,40 @@
 
 
 /* == ALL == */
-.navbar-wrapper {
+.navbar.is-sticky {
    position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff !important;
+}
+
+.navbar.is-sticky .navbar__brand .logo-link {
+   width: 60px;
+}
+
+.navbar.is-transparent {
+   background-color: transparent;
+   border-color: transparent;
+}
+
+/* .navbar.is-transparent .navbar__menu-body .nav-link > a {
+   color: #fff;
+   font-weight: 500;
+} */
+
+.header {
+   position: absolute;
    top: 0;
    left: 0;
    width: 100%;
    z-index: 1000;
 }
 
-.navbar-wrapper.is-transparent .navbar {
-   background-color: transparent;
-   border-color: transparent;
-}
-.navbar-wrapper.is-transparent .navbar__menu-body .nav-link > a {
-   color: #fff;
-   font-weight: 500;
-}
-
-
 .main-hero {
    position: relative;
    z-index: 1;
-   padding: 14rem 0 16rem;
+   padding: 10rem 0 8.5rem;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center top;
@@ -175,7 +228,7 @@
 }
 
 .main-hero .content {
-   padding: 0 5rem;
+   padding: 0 0.65rem;
    text-align: center;
 }
 
@@ -186,17 +239,17 @@
 }
 
 .main-hero .title {
-   font-size: 1.75rem;
+   font-size: 1.25rem;
    margin-bottom: .75rem;
 }
 
 .main-hero .caption {
-   font-size: 3.15rem;
+   font-size: 2.25rem;
    margin-bottom: .75rem;
 }
 
 .main-hero .subcaption {
-   font-size: 1.25rem;
+   font-size: 1rem;
 }
 
 .main-hero .title .highlight,
@@ -213,10 +266,14 @@
    width: 100%;
 }
 
+.main-hero .menu-bottom-bg > img {
+   width: 100%;
+}
+
 
 /* EXPLORE RESTAURANT SECTION */
 .explore-restaurant {
-   padding: 2.15rem 0 3rem;
+   padding: 2.15rem 0 7.5rem;
    background-color: #fd9d3e;
 }
 
@@ -252,7 +309,20 @@
    position: relative;
 }
 
-.restaurant__card-head > img {
+.restaurant__card-head .image {
+   display: block;
+   position: relative;
+   padding-top: 66.666%;
+}
+
+.restaurant__card-head .image > img {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
    border-radius: 6px;
 }
 
@@ -302,14 +372,207 @@
    color: #606179;
 }
 
-@media screen and (min-width: 992px) {
+
+/* == FOOTER == */
+.footer {
+   padding: 4rem 0 0;
+   background-color: #232b2b;
+   position: relative;
+}
+
+.footer__image {
+   display: none;
+   position: absolute;
+   top: -63px;
+   width: 100%;
+   left: 0;
+}
+
+.footer__copyright {
+   padding: 1.25rem; 
+   background-color: #1c2424;
+   text-align: center;
+}
+
+.footer__copyright > p {
+   margin: 0;
+   color: #dadada;
+}
+
+.footer__content .information {
+   margin-bottom: 2.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+/* .footer__content  */
+
+.footer__content .information-left .footer-logo {
+   width: 115px;
+}
+
+.footer__content .information-right > .label {
+   color: #fff;
+   margin-bottom: 10px;
+}
+
+.footer__content .information-common {
+   margin: 0 auto;
+}
+
+.footer__content .information-left, 
+.footer__content .information-common {
+   margin-bottom: 2rem;
+}
+
+.info-list {
+   list-style: none;
+   padding-left: 0;
+}
+
+.info-list .info-item {
+   padding: 0;
+}
+
+.info-list .info-item:not(:last-child) {
+   margin-bottom: 8px;
+}
+
+.info-list .info-item .title,
+.info-list .info-item .text {
+   display: block;
+}
+
+.info-list .info-item .title {
+   color: #fff;
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.info-list .info-item .title > svg.feather {
+   width: 16px;
+   height: 16px;
+   margin-right: 5px;
+}
+
+.info-list .info-item .text {
+   color: #c5c5c5;
+   font-size: 1rem;
+}
+
+.quick-links {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   padding-left: 0;
+}
+
+.quick-links .quick-link-item > a {
+   display: block;
+   min-width: 44px;
+   min-height: 44px;
+   padding: .75rem 0;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.15;
+   margin-right: 1.25rem;
+   padding-right: 1.25rem;
+   color: #c5c5c5;
+   position: relative;
+}
+
+.quick-links .quick-link-item > a::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: 0;
+   width: 1px;
+   height: calc(100% - 18px);
+   transform: translateY(-50%);
+   background-color: #c5c5c5;
+}
+
+.quick-links .quick-link-item:last-child > a::before {
+   content: initial;
+}
+
+.quick-links .quick-link-item:last-child > a {
+   margin-right: 0;
+   padding-right: 0;
+   border-right: 0;
+}
+
+
+/* == RESPONSIVE STYLE == */
+@media screen and (min-width: 768px) {
    .restaurant__list {
       display: flex;
       flex-wrap: wrap;
    }
 
    .restaurant__item {
+      display: flex;
       flex: none;
-      width: 33.333%;
+      width: 50%;
    }
 }
+
+@media screen and (min-width: 992px) {
+   .navbar.is-transparent .navbar__menu-body .nav-link > a {
+      color: #fff;
+      font-weight: 500;
+   }
+
+   .navbar__brand .logo-link {
+      width: 90px;
+   }
+
+   .main-hero {
+      padding: 14rem 0 16rem;
+   }
+
+   .main-hero .content {
+      padding: 0 4.5rem;
+   }
+   
+   .main-hero .title {
+      font-size: 1.75rem;
+   }
+
+   .main-hero .caption {
+      font-size: 3.15rem;
+   }
+
+   .main-hero .subcaption {
+      font-size: 1.25rem;
+   }
+
+   .restaurant__item {
+      flex: none;
+      width: 33.333%;
+      display: flex;
+   }
+
+   .footer__image {
+      display: block;
+   }
+
+   .footer__content .information {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .footer__content .information-left,
+   .footer__content .information-common {
+      margin-bottom: 0;
+   }
+
+   .info-list .info-item {
+      padding: 5px 10px;
+   }
+}
+
