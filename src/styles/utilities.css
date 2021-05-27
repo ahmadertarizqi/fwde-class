@@ -25,3 +25,17 @@ img {
       max-width: 1185px;
    }
 }
+
+.skip-link {
+   position: absolute;
+   top: -50px;
+   left: 0;
+   background-color: #bf1722;
+   color: #fff;
+   padding: 8px;
+   z-index: 1001;
+}
+
+.skip-link:focus {
+   top: 0;
+}
