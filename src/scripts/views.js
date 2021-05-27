@@ -13,13 +13,13 @@ function renderResturantList() {
             <div class="restaurant__card">
                <div class="restaurant__card-head">
                   <figure class="image">
-                     <img src="${restaurant.pictureId}" alt="${restaurant.name} Image" />
+                     <img src="${restaurant.pictureId}" alt="restaurant-image-item" />
                   </figure>
                   <span class="rating-item">${icons['star'].toSvg()} ${restaurant.rating}</span>
                </div>
                <div class="restaurant__card-body">
                   <span class="location">${icons['map-pin'].toSvg()} ${restaurant.city}</span>
-                  <h3 class="name">${restaurant.name}</h3>
+                  <h4 class="name">${restaurant.name}</h4>
                   <p class="description">${truncateString(restaurant.description, 20, '...')}</p>
                </div>
             </div>
