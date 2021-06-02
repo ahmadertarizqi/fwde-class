@@ -177,6 +177,12 @@
 
 
 /* == ALL == */
+a,
+button {
+   min-width: 44px !important;
+   min-height: 44px !important;
+}
+
 .navbar.is-sticky {
    position: fixed;
    top: 0;

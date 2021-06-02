@@ -2,24 +2,24 @@
   "restaurants": [
     {
       "id": "6c7bqjgi84kcowlqdz",
-      "name": "Bring Your Phone Cafe",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "The Ritual Café and Bar",
+      "description": "There is more to The Ritual Café and Bar than its white-clad interior and avocado toast. While this coffee spot at Bukit Timah serves up a wholesome menu, it also hopes to promote holistic wellness – through its alternative healing experiences. Savour nourishing dishes that come prepped with natural Himalayan salt instead of table salt, and stay for one of its many programmes dedicated to topics of mental wellness, spirituality, herbal remedies, and more. ",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41",
       "city": "Medan",
       "rating": 4.6
     },
     {
       "id": "ljx8i0qu2uckcowlqdz",
-      "name": "Run The Gun",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "The Butcher's Wife",
+      "description": "It's a hard task to create a menu that completely omits gluten. It's an even harder task to create a menu where you don't notice that it's gone. But The Butcher's Wife has been doing just that since 2018 – feeding both the gluten-free crowd and those looking for a good meal in a casual space at Tiong Bahru. Fermentation techniques feature extensively in the kitchen, and is used to create some homemade kombucha ($14) with flavours that change up frequently. Roselle and orange, tart and bright, will whet the appetite for a full meal ahead.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/07",
       "city": "Bali",
       "rating": 4.6
     },
     {
       "id": "fe8bbxoazddkcowlqdz",
-      "name": "Pangsit Express",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Little Farms Bistro",
+      "description": "Adjoining the largest outlet of Little Farms at Katong is a new, all-day dine-in eatery. This is also Little Farms Bistro’s biggest venue to date, complete with a full-service bistro, coffee kiosk, and impressive bar counter. The same fresh produce found at its supermarket shelves is used to cook up a range of hearty delights; sample the exclusive wilted kale salad ($18), sautéed lightly with olive oil, then tossed with baby piccolo tomatoes and caramelised Spanish onions for texture and to impart natural sweetness.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/29",
       "city": "Ternate",
       "rating": 4.8
@@ -34,40 +34,40 @@
     },
     {
       "id": "9jpuzkm6n6jkcowlqdz",
-      "name": "Kafein",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Tokyo Sundubu",
+      "description": "It’s not all about cold salads when eating clean. At Tokyo Sundubu, tuck into a warm meal of Korean tofu stew, which is well-loved for its collagen-rich soup and fresh toppings. Its main highlight: the humble sundubu, or soft soy tofu, that’s made in-house to yield a silky texture.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/40",
       "city": "Bali",
       "rating": 3.8
     },
     {
       "id": "cpl5jpsnuqkkcowlqdz",
-      "name": "Makan mudah",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Salmon Samurai",
+      "description": "It's common knowledge that salmon comes packed with omega-3, protein, potassium, and more nutrients. Here, the humble seafood gets prepped in multiple ways at Salmon Samurai. Whether you’re in the mood for some fresh sashimi, or cooked and glazed with teriyaki, there’s a meal bowl that will satisfy your salmon craving. A basic set starts from $9.90, and comes with your choice of salmon – sashimi, spicy, garlic shoyu, teriyaki, mentaiko, and more",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/08",
       "city": "Malang",
       "rating": 4.6
     },
     {
       "id": "iqtf9hmdzvbkcowlqdz",
-      "name": "Saya Suka",
-      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "name": "Tiong Bahru Bakery Diner",
+      "description": "The latest all-day dining concept of Tiong Bahru Bakery serves up thoughtful, clean plates that aren’t just leaves tossed with dressing. Take for instance the hot chicken salad with caramelised pumpkin ($20) – it might sound simple, but to prepare it, chicken breast is first marinated overnight in turmeric and lemongrass, then slow-cooked in a pan.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/32",
       "city": "Surabaya",
       "rating": 3.6
     },
     {
       "id": "8i06gqcc2dpkcowlqdz",
-      "name": "Gigitan Cepat",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "name": "Supergreek",
+      "description": "Supergreek makes its own Greek yoghurt – a painstaking process that takes over 30 hours – just because it believes that the final product is smoother, creamier, and healthier. Try it in its protein-packed Super Smoothies ($6), blended with fruits, or find it in a range of homemade sauces like tzatziki and avocado that tops the many healthy grain bowls.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/45",
       "city": "Aceh",
       "rating": 4
     },
     {
       "id": "wf5o19xhxxkcowlqdz",
-      "name": "Fairy Cafe",
-      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "name": "COMO Cuisine",
+      "description": "COMO Cuisine brings together the best dishes from the luxury hotel’s various properties. So while you might be dining at COMO’s hip Dempsey enclave, your tastebuds will be taking a journey across the globe, sampling Bhutanese momo ($12) with a side of ezay chilli, or digging into the same aromatic lobster biryani ($48) that’s served at its Cocoa Island property. The menu leans healthy, thanks in part to a series of signatures from COMO Shambala, the brand’s wellness arm.",
       "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04",
       "city": "Malang",
       "rating": 3.9
