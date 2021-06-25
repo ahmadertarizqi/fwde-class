@@ -11,7 +11,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-console": 0,
+        "no-console": "warn",
         "indent": 2,
         "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
         "import/prefer-default-export": "off",

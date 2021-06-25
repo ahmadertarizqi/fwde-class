@@ -1,13 +1,8 @@
 import { icons } from 'feather-icons';
-import { truncateString } from '../utilities';
+import { getImage, truncateString } from '../utils/common';
 
 class RestaurantItem extends HTMLElement {
-  constructor() {
-    super();
-    console.log('restaurant constructor');
-  }
-
-  set restaurant(restaurant) {
+  set setRestaurant(restaurant) {
     this._restaurant = restaurant;
     this.renderElement();
   }
@@ -17,7 +12,7 @@ class RestaurantItem extends HTMLElement {
       <div class="restaurant__card">
         <div class="restaurant__card-head">
           <figure class="image">
-              <img src="${this._restaurant.pictureId}" alt="${this._restaurant.name} Image" />
+              <img src="${getImage(this._restaurant.pictureId, 'sm')}" alt="${this._restaurant.name} Image" />
           </figure>
           <span class="rating-item">${icons.star.toSvg()} ${this._restaurant.rating}</span>
         </div>

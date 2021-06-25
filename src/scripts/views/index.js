@@ -1,32 +1,9 @@
-import data from '../DATA.json';
+import RestaurantSource from '../APIs/restaurant-source';
 
-function renderResturantList() {
+async function renderRestaurantList() {
   const parentElem = document.querySelector('restaurant-list');
-  const { restaurants } = data;
-
-  parentElem.restaurants = restaurants;
-
-  // let markup = '';
-  // restaurants.forEach((restaurant) => {
-  //   markup = `
-  //     <div class="restaurant__item">
-  //       <div class="restaurant__card">
-  //           <div class="restaurant__card-head">
-  //             <figure class="image">
-  //                 <img src="${restaurant.pictureId}" alt="${restaurant.name} Image" />
-  //             </figure>
-  //             <span class="rating-item">${icons.star.toSvg()} ${restaurant.rating}</span>
-  //           </div>
-  //           <div class="restaurant__card-body">
-  //             <span class="location">${icons['map-pin'].toSvg()} ${restaurant.city}</span>
-  //             <h3 class="name">${restaurant.name}</h3>
-  //             <p class="description">${truncateString(restaurant.description, 20, '...')}</p>
-  //           </div>
-  //       </div>
-  //     </div>
-  //   `;
-  //   parentElem.insertAdjacentHTML('beforeend', markup);
-  // });
+  const restaurants = await RestaurantSource.getRestaurants();
+  parentElem.setRestaurants = restaurants;
 }
 
 function stickyHeader() {
@@ -85,6 +62,6 @@ function navbarMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
   navbarMenu();
-  renderResturantList();
+  renderRestaurantList();
   stickyHeader();
 });

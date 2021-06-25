@@ -1,6 +1,5 @@
 class RestaurantList extends HTMLElement {
-  set restaurants(restaurants) {
-    console.log(restaurants);
+  set setRestaurants(restaurants) {
     this._restaurants = restaurants;
     this.renderElement();
   }
@@ -8,11 +7,11 @@ class RestaurantList extends HTMLElement {
   renderElement() {
     this.innerHTML = '';
     this._restaurants.forEach((restaurant) => {
-      const createItem = document.createElement('restaurant-item');
-      createItem.restaurant = restaurant;
-      createItem.setAttribute('id', restaurant.id);
-      createItem.setAttribute('class', 'restaurant__item');
-      this.appendChild(createItem);
+      const restaurantItem = document.createElement('restaurant-item');
+      restaurantItem.setRestaurant = restaurant;
+      restaurantItem.setAttribute('id', restaurant.id);
+      restaurantItem.setAttribute('class', 'restaurant__item');
+      this.appendChild(restaurantItem);
     });
   }
 }
