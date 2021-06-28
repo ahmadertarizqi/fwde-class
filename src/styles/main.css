@@ -357,9 +357,18 @@ button {
    padding: 15px 7px;
 }
 .restaurant__card-body .name {
+   display: block;
    margin-bottom: 8px;
    font-size: 1.15rem;
    font-weight: 700;
+   min-height: 20px !important;
+   color: #333;
+   text-decoration: none;
+   transition: all 0.25s;
+}
+.restaurant__card-body .name:hover {
+   color: #fd9d3e;
+   text-decoration: underline;
 }
 .restaurant__card-body .location {
    display: flex;

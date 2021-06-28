@@ -1,10 +1,4 @@
-import RestaurantSource from '../APIs/restaurant-source';
-
-async function renderRestaurantList() {
-  const parentElem = document.querySelector('restaurant-list');
-  const restaurants = await RestaurantSource.getRestaurants();
-  parentElem.setRestaurants = restaurants;
-}
+import App from './init';
 
 function stickyHeader() {
   const headerElement = document.querySelector('.header');
@@ -62,6 +56,17 @@ function navbarMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
   navbarMenu();
-  renderRestaurantList();
   stickyHeader();
+});
+
+const appInit = new App({
+  content: document.querySelector('#rootContent'),
+});
+
+window.addEventListener('hashchange', () => {
+  appInit.renderPage();
+});
+
+window.addEventListener('load', () => {
+  appInit.renderPage();
 });
