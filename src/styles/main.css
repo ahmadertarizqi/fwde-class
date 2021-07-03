@@ -521,6 +521,198 @@ button {
    border-right: 0;
 }
 
+.subheader-info {
+   min-height: 225px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   z-index: 1;
+   padding: 10rem 0 2rem;
+}
+
+.subheader-info-title {
+   font-size: 1.85rem;
+   color: #fff;
+}
+
+.subheader-info::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #0000008c;
+   z-index: -1;
+}
+
+.page-detail-wrapper {
+   padding: 3rem 0 7rem;
+   background-color: #fd9d3e;
+   min-height: 300px;
+}
+
+.restaurant-info__main {
+   display: block;
+   margin-bottom: 2rem;
+}
+
+.restaurant-info__main .left {
+   width: 100%;
+   display: block;
+   margin-right: 0;
+   margin-bottom: 20px;
+}
+
+.restaurant-info__main .right {
+   width: 100%;
+}
+
+.restaurant-info__main .place-img {
+   border-radius: 6px;
+   border: 3px solid #fff;
+}
+
+.restaurant-info__main .place-img > img {
+   border-radius: inherit;
+}
+.restaurant-info__main .title {
+   color: #333;
+   font-size: 2rem;
+   margin-bottom: .35rem;
+} 
+
+.additional-info {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.additional-info.list-inline {
+   margin-bottom: .85rem;
+}
+
+.additional-info-item {
+   font-size: 16px;
+   margin-bottom: .5rem;
+   color: #333;
+}
+
+.additional-info-item.has-icon {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0;
+}
+
+.additional-info-item.has-icon:not(:last-child) {
+   margin-right: 1rem;
+}
+
+.additional-info-item.has-icon .is-icon {
+   width: 18px;
+   height: 18px;
+   margin-right: 4px;
+}
+
+.additional-info-item > h4 {
+   font-size: 16px;
+   font-weight: 700;
+   color: #333;
+}
+
+.restaurant-info__more .menus-title {
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+   color: #333;
+}
+
+.menu-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -10px;
+}
+
+.menu-list-item {
+   flex: none;
+   width: 50%;
+   display: flex;
+   padding: 0 10px;
+}
+
+.menu-list-item .inner {
+   width: 100%;
+   padding: 8px 13px;
+   background-color: #fff;
+   border-radius: 4px;
+   font-weight: 500;
+   margin-bottom: 1rem;
+   color: #333;
+}
+
+.review-list {
+   display: block;
+   margin: 0 -10px;
+}
+
+.review-list-item {
+   width: 100%;
+   display: flex;
+   padding: 0 10px;
+}
+
+.review-list-item > .inner {
+   width: 100%;
+   background-color: #fff;
+   padding: 13px 15px;
+   border-radius: 5px;
+   margin-bottom: 1rem;
+   overflow: hidden;
+}
+
+.review-list-item > .inner .head {
+   display: flex;
+   margin-bottom: 12px;
+}
+
+.review-list-item > .inner .head .icon {
+   flex: none;
+   width: 40px;
+   height: 40px;
+   background-color: #d8d8d8;
+   border-radius: 6px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 10px;
+}
+
+.review-list-item > .inner .head .info {
+   flex-grow: 1;
+}
+
+.review-list-item > .inner .head .info > h5 {
+   font-size: 14px;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+.review-list-item > .inner .head .info > .review-date {
+   display: flex;
+   align-items: center;
+   font-size: 14px;
+   color: #9e9e9e;
+   font-weight: 400;
+}
+
+.review-list-item > .inner .head .info > .review-date .is-date {
+   width: 16px;
+   height: 16px;
+   margin-right: 5px;
+}
+
+.review-list-item > .inner .content p {
+   font-size: 14px;
+}
 
 /* == RESPONSIVE STYLE == */
 @media screen and (min-width: 768px) {
@@ -533,6 +725,39 @@ button {
       display: flex;
       flex: none;
       width: 50%;
+   }
+
+   .restaurant-info__main {
+      display: flex;
+      margin-bottom: 2rem;
+   }
+   
+   .restaurant-info__main .left {
+      width: 43%;
+      flex: none;
+      display: block;
+      margin-right: 1.25rem;
+   }
+   
+   .restaurant-info__main .right {
+      flex-grow: 1;
+   }
+   
+   .menu-list-item {
+      width: 16.666%;
+   }
+
+   .review-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+   }
+   
+   .review-list-item {
+      flex: none;
+      width: 25%;
+      display: flex;
+      padding: 0 10px;
    }
 }
 

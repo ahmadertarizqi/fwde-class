@@ -39,3 +39,9 @@ img {
 .skip-link:focus {
    top: 0;
 }
+
+.list-inline {
+   list-style: none;
+   display: flex;
+   align-items: center;
+}

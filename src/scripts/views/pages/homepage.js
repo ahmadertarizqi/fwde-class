@@ -26,9 +26,9 @@ const HomePage = {
   },
 
   async afterRender() {
-    const parentElem = document.querySelector('restaurant-list');
+    const restaurantList = document.querySelector('restaurant-list');
     const restaurants = await RestaurantSource.getRestaurants();
-    parentElem.setRestaurants = restaurants;
+    restaurantList.setRestaurants = restaurants;
   },
 };
 

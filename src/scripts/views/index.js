@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const appInit = new App({
+  body: document.querySelector('body'),
   content: document.querySelector('#rootContent'),
 });
 
