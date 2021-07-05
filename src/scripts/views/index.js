@@ -1,5 +1,3 @@
-import App from './init';
-
 function stickyHeader() {
   const headerElement = document.querySelector('.header');
   const navbarElement = document.querySelector('.navbar');
@@ -57,17 +55,4 @@ function navbarMenu() {
 document.addEventListener('DOMContentLoaded', () => {
   navbarMenu();
   stickyHeader();
-});
-
-const appInit = new App({
-  body: document.querySelector('body'),
-  content: document.querySelector('#rootContent'),
-});
-
-window.addEventListener('hashchange', () => {
-  appInit.renderPage();
-});
-
-window.addEventListener('load', () => {
-  appInit.renderPage();
 });
