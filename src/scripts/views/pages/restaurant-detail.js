@@ -32,6 +32,9 @@ const RestaurantDetail = {
         id: restaurant.id,
         name: restaurant.name,
         rating: restaurant.rating,
+        pictureId: restaurant.pictureId,
+        description: restaurant.description,
+        city: restaurant.city,
       },
     });
   },
