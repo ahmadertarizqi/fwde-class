@@ -1,6 +1,7 @@
 import { createTemplateDetail } from '../templates/template-creator';
 import UrlParser from '../../routes/url-parser';
 import RestaurantSource from '../../APIs/restaurant-source';
+import ButtonLike from '../../utils/button-like';
 
 const RestaurantDetail = {
   async render() {
@@ -13,6 +14,7 @@ const RestaurantDetail = {
 
       <div class="page-detail-wrapper">
         <div class="container" id="detailContent"></div>
+        <div class="btn-like-container"></div>
       </div>
     `;
   },
@@ -23,6 +25,15 @@ const RestaurantDetail = {
     const restaurant = await RestaurantSource.getRestaurant(url.id);
     const detailContainer = document.querySelector('#detailContent');
     detailContainer.innerHTML = createTemplateDetail(restaurant);
+
+    ButtonLike.init({
+      buttonLikeContainer: document.querySelector('.btn-like-container'),
+      restaurant: {
+        id: restaurant.id,
+        name: restaurant.name,
+        rating: restaurant.rating,
+      },
+    });
   },
 };
 

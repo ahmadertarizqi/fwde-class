@@ -70,3 +70,9 @@ export const createTemplateDetail = (restaurant) => `
     </div>
   </div>
 `;
+
+export const renderLikeButtonTemplate = (likeState) => `
+  <button aria-label="like this restaurant" id="btnLike" class="btn-like ${likeState ? 'is-active' : ''}" title="Add to Favorite">
+    ${icons.heart.toSvg({ class: 'has-icon' })}
+  </button>
+`;

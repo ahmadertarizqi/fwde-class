@@ -3,9 +3,10 @@ import { ExpirationPlugin } from 'workbox-expiration';
 import { cleanupOutdatedCaches, precacheAndRoute } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
+import config from './config';
 
 setCacheNameDetails({
-  prefix: new Date().toISOString(),
+  prefix: config.CACHE_NAME,
   precache: 'precache',
   runtime: 'runtime',
 });

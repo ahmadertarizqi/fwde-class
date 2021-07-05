@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "feather-icons": "^4.28.0",
+    "idb": "^6.0.0",
     "regenerator-runtime": "^0.13.5",
     "workbox-core": "^6.0.2",
     "workbox-expiration": "^6.0.2",
