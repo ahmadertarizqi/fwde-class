@@ -1,4 +1,5 @@
 import RestaurantSource from '../../APIs/restaurant-source';
+import { clearLoader, renderInfoError, renderLoader } from '../shared';
 
 const HomePage = {
   async render() {
@@ -19,6 +20,8 @@ const HomePage = {
       <section id="mainContent" class="explore-restaurant">
         <div class="container">
           <h2 class="title">Explore Restaurant</h2>
+          <div id="loaderWrapper"></div>
+          <div id="infoWrapper"></div>
           <restaurant-list class="restaurant__list"></restaurant-list>
         </div>
       </section>
@@ -26,9 +29,19 @@ const HomePage = {
   },
 
   async afterRender() {
-    const restaurantList = document.querySelector('restaurant-list');
-    const restaurants = await RestaurantSource.getRestaurants();
-    restaurantList.setRestaurants = restaurants;
+    const loaderWrapper = document.querySelector('#loaderWrapper');
+    renderLoader(loaderWrapper);
+
+    try {
+      const restaurantList = document.querySelector('restaurant-list');
+      const restaurants = await RestaurantSource.getRestaurants();
+      clearLoader();
+      restaurantList.setRestaurants = restaurants;
+    } catch (error) {
+      const infoWrapper = document.querySelector('#infoWrapper');
+      clearLoader();
+      renderInfoError(infoWrapper);
+    }
   },
 };
 

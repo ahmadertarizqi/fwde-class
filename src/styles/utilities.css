@@ -80,3 +80,55 @@ img {
       margin-right: 2.5rem;
    }
 }
+
+.loader-indicator,
+.information-error {
+   min-height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.loader-indicator > .inner {
+   text-align: center;
+}
+
+.loader-indicator > .inner svg {
+   animation: rotateLoader 1s infinite;
+   transform-origin: center;
+}
+
+.loader-indicator > .inner .text-explanation {
+   margin-bottom: 0;
+   margin-top: 1rem;
+   animation: fadeOutLoader 1s infinite;
+   font-size: 20px;
+}
+
+.information-error > .inner {
+   text-align: center;
+   padding: 15px 25px;
+   background-color: #ffffff61;
+   border-radius: 6px;
+}
+
+.information-error > .inner .text {
+   font-size: 20px;
+   margin-top: 1rem;
+}
+
+@keyframes rotateLoader {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      transform: rotate3d(0, 0, 1, 200deg);
+      opacity: 0;
+   }
+}
+
+@keyframes fadeOutLoader {
+   from { opacity: 1; }
+   to { opacity: 0; }
+}

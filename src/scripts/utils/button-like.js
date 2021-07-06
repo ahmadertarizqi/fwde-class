@@ -1,5 +1,5 @@
 import RestaurantIDB from '../APIs/favorite-restaurant-idb';
-import { renderLikeButtonTemplate } from '../views/templates/template-creator';
+import { renderLikeButtonTemplate } from '../views/shared';
 
 const ButtonLike = {
   async init({ buttonLikeContainer, restaurant }) {
