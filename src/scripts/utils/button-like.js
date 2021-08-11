@@ -6,7 +6,7 @@ const ButtonLike = {
     this._buttonLikeContainer = buttonLikeContainer;
     this._restaurant = restaurant;
     this._likeActive = false;
-    this._renderButton();
+    await this._renderButton();
   },
 
   async _renderButton() {

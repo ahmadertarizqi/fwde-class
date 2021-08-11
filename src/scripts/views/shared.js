@@ -1,7 +1,11 @@
 import { icons } from 'feather-icons';
 
 export const renderLikeButtonTemplate = (likeState) => `
-  <button aria-label="like this restaurant" id="btnLike" class="btn-like ${likeState ? 'is-active' : ''}" title="Add to Favorite">
+  <button 
+    aria-label="${likeState ? 'unlike this restaurant' : 'like this restaurant'}" 
+    id="btnLike" class="btn-like ${likeState ? 'is-active' : ''}" 
+    title="Add to Favorite"
+  >
     ${icons.heart.toSvg({ class: 'has-icon' })}
   </button>
 `;
