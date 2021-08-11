@@ -12,7 +12,7 @@ class RestaurantItem extends HTMLElement {
       <div class="restaurant__card">
         <div class="restaurant__card-head">
           <figure class="image">
-              <img src="${getImage(this._restaurant.pictureId, 'sm')}" alt="${this._restaurant.name} Image" />
+              <img data-src="${getImage(this._restaurant.pictureId, 'sm')}" class="lazyload" alt="${this._restaurant.name} Image" />
           </figure>
           <span class="rating-item">${icons.star.toSvg()} ${this._restaurant.rating}</span>
         </div>

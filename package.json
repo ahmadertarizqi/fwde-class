@@ -6,6 +6,7 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "build-image": "node sharp.js",
     "test": "karma start",
     "lint": "npx eslint ./src",
     "e2e": "codeceptjs run --steps"
@@ -17,6 +18,7 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "codeceptjs": "^3.1.1",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
@@ -24,6 +26,8 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
     "html-webpack-plugin": "^4.3.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "^3.5.0",
     "karma": "^5.1.0",
@@ -33,6 +37,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^4.0.2",
     "puppeteer": "8.0.0",
+    "sharp": "^0.28.3",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
@@ -44,6 +49,7 @@
   "dependencies": {
     "feather-icons": "^4.28.0",
     "idb": "^6.0.0",
+    "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.5",
     "workbox-core": "^6.0.2",
     "workbox-expiration": "^6.0.2",
