@@ -7,7 +7,7 @@ import { clearLoader, renderLoader, renderInfoError } from '../shared';
 const RestaurantDetail = {
   async render() {
     return `
-      <div class="subheader-info" style="background-image: url('./images/heros/hero-image_4.jpg');">
+      <div class="subheader-info">
         <div class="container">
           <h2 class="subheader-info-title">Restaurant Detail</h2>
         </div>

@@ -4,7 +4,7 @@ import { clearLoader, renderInfoError, renderLoader } from '../shared';
 const HomePage = {
   async render() {
     return `
-      <section class="main-hero" style="background-image: url('./images/heros/hero-image_4.jpg');">
+      <section class="main-hero">
         <div class="container">
           <div class="content">
             <h2 class="title">- Welcome to <span class="highlight">Healfoo Restaurant</span> -</h2>
@@ -13,7 +13,7 @@ const HomePage = {
           </div>
         </div>
         <div class="menu-bottom-bg">
-          <img src="./images/bg-orange-section-bottom.png" alt="menu-bottom-bg" />
+          <img src="./images/bg-orange-section-bottom.png" width="100%" height="20px" alt="menu-bottom-bg" />
         </div>
       </section>
 

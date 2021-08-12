@@ -220,6 +220,7 @@ button {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center top;
+   background-image: url('/images/hero-image_4-small.jpg');
 }
 
 .main-hero::before {
@@ -525,6 +526,7 @@ button {
    min-height: 225px;
    background-size: cover;
    background-repeat: no-repeat;
+   background-image: url('/images/hero-image_4-small.jpg');
    position: relative;
    z-index: 1;
    padding: 10rem 0 2rem;
@@ -773,6 +775,7 @@ button {
 
    .main-hero {
       padding: 14rem 0 16rem;
+      background-image: url('/images/hero-image_4-large.jpg');
    }
 
    .main-hero .content {
@@ -789,6 +792,10 @@ button {
 
    .main-hero .subcaption {
       font-size: 1.25rem;
+   }
+
+   .subheader-info {
+      background-image: url('/images/hero-image_4-large.jpg');
    }
 
    .restaurant__item {

@@ -3,7 +3,7 @@ import RestaurantIDB from '../../APIs/favorite-restaurant-idb';
 const Favorites = {
   async render() {
     return `
-      <div class="subheader-info" style="background-image: url('./images/heros/hero-image_4.jpg');">
+      <div class="subheader-info">
         <div class="container">
           <h2 class="subheader-info-title">Restaurant Favorites</h2>
         </div>
