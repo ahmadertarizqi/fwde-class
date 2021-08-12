@@ -8,6 +8,7 @@ Before(({ I }) => {
 });
 
 Scenario('Like one restaurant', async ({ I }) => {
+  I.wait(5);
   I.see('Restaurant Favorites Not Found', '.restaurant__not-found');
   I.amOnPage('/');
 
